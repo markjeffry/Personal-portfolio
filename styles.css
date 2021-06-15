@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align:center;
+    background-color: #071330;
+    font-size: 16px;
+    color: #d1deec;
+
+}
+
+h1 {
+    font-family: Arvo, serif;
+    font-weight: bold;
+    font-size: 5rem;
+    margin: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 2px solid gold;
+}
+
+h2 {
+    font-family: Arvo, serif;
+    font-weight: normal;
+    font-size: 3rem;
+    margin: 10px;
+}
+
+h3 {
+    font-family: Lato, serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+p, li {
+    font-family: Lato, sans-serif;
+}
+
+a {
+    color: #d1deec;
+    text-decoration: underline;
+}
+
+li {
+    font-style: italic;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#profile-pic {
+    border-radius: 50%;
+    max-width: 30%;
+}
+
+@media only screen and (max-width:1000px) {
+    header {
+        flex-direction: column;   
+    }
+
+    #profile-pic {
+        max-width: 50%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+.hover-accent:hover {
+    color: gold;
+}
+
+.page-array {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 2rem 0;
+}
+
+.page {
+    max-width: 1000px;
+    font-size: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+@media only screen and (min-width:1000px) {
+    .page {
+        max-width: 50%;    
+    }
+}
+
+.page img {
+    width: 100%;
+}
+
+.hover:hover {
+    padding: 0.25rem;
+    background-color: gold;
+}
+
+#teaching {
+    background-image: url("./resources/dmmme_bldg.jpg");
+    background-size:cover;
+    background-position: center;
+}
+
+#research {
+    background-image: url("./resources/plasma.jpg");
+    background-size:cover;
+    background-position: center;
+}
+
+.text-container {
+    position: absolute;
+    font-size: 1rem;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 60%;
+    margin: 5%;
+    padding: 5%;
+    background-color:#202020d0;
+}
