@@ -47,12 +47,47 @@ a {
 
 li {
     font-style: italic;
+    list-style: none;
+    margin: 0 1rem;
+}
+
+nav {
+    position:fixed;
+    padding: 1rem;
+    width: 100%;
+    height: 1rem;
+    background-color: black;
+    z-index: 6;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+#clever-hide {
+    z-index: 1;
+}
+
+@media only screen and (max-width:1000px) {
+    ul {
+        justify-content: flex-start;
+    }
+}
+
+ul a {
+    text-decoration: none;
 }
 
 header {
+    position: relative;
+    top: 3rem;
+    background-color: #071330;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 6rem;
+    z-index: 5;
 }
 
 
@@ -136,7 +171,7 @@ section {
 .text-container {
     position: absolute;
     font-size: 1rem;
-    z-index: 5;
+    z-index: 3;
     top: 0px;
     left: 0px;
     display: flex;
@@ -148,3 +183,24 @@ section {
     padding: 5%;
     background-color:#202020d0;
 }
+
+.food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-container {
+    max-width: 600px;
+}
+
+.food-container img {
+    width: 100%;
+    border-radius: 10px;
+    border: 10px solid gold; 
+}
+
+.foodstuff-hidden {
+    display:none;
+}
+

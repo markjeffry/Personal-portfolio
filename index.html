@@ -7,14 +7,22 @@
     <head>
         <!--<link href="./reset200802.css" rel="stylesheet" type="text/css">-->
         <link href="./styles.css" rel="stylesheet" type="text/css">
+        <script src="script.js"></script>
         <title>Jepoy De Leon</title>
     </head>
     <body>
+        <nav>
+            <ul>
+                <a href="#top"><li>Top</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+        <div id="top"></div>
         <header>
             <img src="resources/picture.png" id="profile-pic" alt="profile picture">
             <div class="header-text">
                 <h1>Jepoy De Leon</h1>
-                <h3><span class="strikethrough">Artist</span> &#183; <a href="#food" class="hover-accent">Home Cook</a> &#183; <a href="#materials" class="hover-accent">Materials Engineer</a> &#183; <a href="#projects" class="hover-accent">Web Developer</a></h3>
+                <h3><span class="strikethrough">Artist</span> &#183; <a href="#food" class="hover-accent">Home Cook</a> &#183; <a href="#materials" class="hover-accent">Materials Engineer</a> &#183; <a href="#projects" class="hover-accent">Web Developer</a></h3>         
             </div>
         </header>
         <main>
@@ -55,11 +63,25 @@
             </section>
             <section class="food">
                 <h2 id="food">Food &#129316;</h2>
+                <div class="food-container">
+                    <a href="https://www.instagram.com/legwkio">
+                    <img src="resources/menudo.jpg" class="food-stuff foodstuff-hidden" alt="menudo">
+                    <img src="resources/pizza.jpg" class="food-stuff foodstuff-hidden" alt="pizza">
+                    <img src="resources/bacon.jpg" class="food-stuff foodstuff-hidden" alt="bacon">
+                    <img src="resources/sandwich.jpg" class="food-stuff foodstuff-hidden" alt="menudo">
+                    <img src="resources/tuna.jpg" class="food-stuff foodstuff-hidden" alt="pizza">
+                    <img src="resources/pochero.jpg" class="food-stuff foodstuff-hidden" alt="bacon">
+                    </a>
+                </div>
+                <p><a href="https://www.instagram.com/legwkio">Follow my Instagram for more food stuff!</a></p>
             </section>
-           
         </main>
         <footer>
-
+            <h3 id="contact">Contact</h3>
+            <ul>
+                <li>XXX@jepoy.me</li>
+                <li>LinkedIn</li>
+            </ul>
         </footer>       
     </body>
 </html>
